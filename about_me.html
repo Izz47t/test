@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kMVqkVkrp86eSO8d5o0h3a1O5pPT2Ba6wSd8YtE5xgKZR5Epr5YdX7Io1I4XvJ2so2WZv6sPtIMUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffcc00;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header .logo {
+            font-weight: 600;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        header .logo i {
+            margin-right: 10px;
+        }
+        header .contact-info, header .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info span, header .social-icons a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            background: url('image/gambar23.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: black;
+            animation: fadeIn 2s ease-in;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: black;
+            animation: fadeIn 2s ease-in 1s;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .section p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.6em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-user"></i> My Website
+        </div>
+        <div class="contact-info">
+            <span>📞 +6011-6368-6713</span>
+            <span>✉️ izzatmu90@gmail.com</span>
+        </div>
+    </header>
+    <nav>
+        <a href="assingment.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <a href="galeri.html">Gallery</a>
+        <a href="education.html">Educational Background</a>
+        <a href="interest.html">Interest</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <div class="hero">
+        <div>
+            <h1>About Me</h1>
+            <p>Learn more about Izzat</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>Assalamualaikum and Hi, my name is Muhammad 'Izzat Bin Che Muret. Welcome To My Own Website! I am happy to have you visiting my personal website. You can know more about me such my hobbies, my background, my skills and more. </p>
+        </div>
+        <div class="section">
+            <h2>Background</h2>
+            <p>I was born and raised in Kulim, Kedah. I am number three of my four siblings. I currently live in Bukit Mertajam, Pulau Pinang. I pursued my education at UiTM Kedah, where I developed a strong foundation in my field of study. Over the years, I have been involved in various activities that have shaped my career and personal growth. I also learnt some new things that i even not know before entering this instituion.</p>
+        </div>
+        <div class="section">
+            <h2>Hobbies and Interests</h2>
+            <p>In my free time, I enjoy playing rugby, exploring new places, and capturing beautiful moments through photography. I believe that staying active and curious is essential for a fulfilling life. My hobbies help me relax and provide opportunities to learn and grow. I also gained a lot of experiences while travelling with my team which is named Ex-Scorpions RC and represents alumni of High School Bukit Mertajam.</p>
+            <div class="gallery">
+                <img src="image/gambar1.jpg" alt="Gallery Image 1">
+                <img src="image/gambar25.jpg" alt="Gallery Image 2">
+                <img src="image/gambar5.jpg" alt="Gallery Image 3">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <p>I have developed a diverse set of skills over the years, including:</p>
+            <ul>
+                <li>Project Management</li>
+                <li>Web Development</li>
+                <li>Team Leadership</li>
+                <li>Public Speaking</li>
+            </ul>
+            <p>I am always eager to learn new things and take on new challenges. My goal is to continuously improve myself and contribute positively to any team or project I am a part of.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Izzat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos and Videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kMVqkVkrp86eSO8d5o0h3a1O5pPT2Ba6wSd8YtE5xgKZR5Epr5YdX7Io1I4XvJ2so2WZv6sPtIMUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header .logo {
+            font-weight: 600;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info span {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .hero {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 60vh;
+           background: url('image/gambar3.jpg') no-repeat center center/cover;
+           color: white;
+           text-align: center;
+           padding: 1em;
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: black; /* Changed to black color */
+            animation: fadeInSlideUp 2s ease-in-out, blink 1.5s step-end infinite alternate;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: black; /* Changed to black color */
+            animation: fadeInSlideUp 2s ease-in-out 1s, blink 1.5s step-end infinite alternate;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .gallery, .videos {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .gallery h2, .videos h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery .images, .videos .video-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery .images img, .videos .video-items video {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery .images img:hover, .videos .video-items video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            My Gallery
+        </div>
+        <div class="contact-info">
+            <span>📞 +6011-6368-6713</span>
+            <span>✉️ izzatmu90@gmail.com</span>
+        </div>
+    </header>
+    <nav>
+        <a href="assingment.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <a href="galeri.html">Gallery</a>
+        <a href="education.html">Educational Background</a>
+        <a href="interest.html">Interest</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <div class="hero">
+        <div>
+            <h1>My Photos and Videos</h1>
+            <p>Welcome to my gallery of photos and videos.</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="images">
+                <img src="image/gambar1.jpg" alt="Photo 1">
+                <img src="image/gambar2.jpg" alt="Photo 2">
+                <img src="image/gambar3.jpg" alt="Photo 3">
+                <img src="image/gambar4.jpg" alt="Photo 4">
+                <img src="image/gambar5.jpg" alt="Photo 5">
+                <img src="image/gambar6.jpg" alt="Photo 6">
+                <img src="image/gambar7.jpg" alt="Photo 7">
+                <img src="image/gambar8.jpg" alt="Photo 8">
+                <img src="image/gambar9.jpg" alt="Photo 9">
+                <img src="image/gambar10.jpg" alt="Photo 10">
+                <img src="image/gambar11.jpg" alt="Photo 11">
+                <img src="image/gambar12.jpg" alt="Photo 12">
+                <img src="image/gambar13.jpg" alt="Photo 13">
+                <img src="image/gambar14.jpg" alt="Photo 14">
+                <img src="image/gambar15.jpg" alt="Photo 15">
+                <img src="image/gambar16.jpg" alt="Photo 16">
+                <img src="image/gambar17.jpg" alt="Photo 17">
+                <img src="image/gambar18.jpg" alt="Photo 18">
+                <img src="image/gambar19.jpg" alt="Photo 19">
+                <img src="image/gambar20.jpg" alt="Photo 20">
+                <img src="image/gambar21.jpg" alt="Photo 21">
+                <img src="image/gif.gif" alt="Photo 22">
+                <img src="image/gambar23.jpg" alt="Photo 23">
+                <img src="image/gambar24.jpg" alt="Photo 24">
+                <img src="image/gambar25.jpg" alt="Photo 25">
+            </div>
+        </div>
+        <div class="videos">
+            <h2>Video Gallery</h2>
+            <div class="video-items">
+                <video controls>
+                    <source src="image/first game.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="image/sec game.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="image/tackle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Izzat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+

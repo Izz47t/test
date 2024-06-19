@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header .logo {
+            font-weight: 600;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info span {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: white;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            background: url('image/new.gif') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .interest-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .interest-box {
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(50% - 30px); 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .interest-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .interest-box img {
+            width: 250px; 
+            height: 150px; 
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        .interest-box h2 {
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        .audio-player {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            My Interests
+        </div>
+        <div class="contact-info">
+            <span>📞 +6011-6368-6713</span>
+            <span>✉️ izzatmu90@gmail.com</span>
+        </div>
+    </header>
+    <nav>
+        <a href="assingment.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <a href="galeri.html">Gallery</a>
+        <a href="education.html">Educational Background</a>
+        <a href="interest.html">Interest</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <div class="hero">
+        <div>
+            <h1>My Interests</h1>
+            <p>Discover my hobbies, bucket list, and my favourite YouTube channel</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="interest-group">
+            <div class="interest-box">
+                <h2>Travel to New Zealand</h2>
+                <p>New Zealand has been on my bucket list for a while because of the nature there that attracts me. Besides, I also admire their national rugby team, <a href="https://www.allblacks.com/" target="_blank">All Blacks</a>, which has won three Rugby World Cup titles. It's also their traditional war dance, Haka, that always gives you goosebumps.</p>
+                <!-- Embedded YouTube video -->
+                <div class="video-container">
+                    <iframe width="750" height="400" src="https://www.youtube.com/embed/EXLdoVm8lF8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="interest-box">
+                <h2>Guitar Enthusiasts</h2>
+                <p>I am interested in playing guitar. I have learnt some songs with my housemate for example "Sempurna" and "Di Ambang Wati". I'm still learning the basics and keep on training till my fingers are flexible enough.</p>
+                <!-- Image -->
+                <img src="image/gitar.jpg" alt="Guitar Image" class="guitar-image">
+                <!-- Audio Players -->
+                <div class="audio-player">
+                    <audio controls>
+                        <source src="image/wati.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Di Ambang Wati - <a href="wati.mp3" download>Download</a></p>
+                </div>
+                <div class="audio-player">
+                    <audio controls>
+                        <source src="image/sempurna.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Sempurna - <a href="image/sempurna.mp3" download>Download</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="interest-box">
+            <h2>Hobbies</h2>
+            <ul>
+                <li><a href="gallery.html">Rugby</a></li>
+                <p>As you can see in my gallery, I love playing rugby because of the sportsmanship and also it's a contact game where I can release all my tension.</P> 
+                <li><a href="https://www.youtube.com/@JudoSloth" target="_blank">Gaming (Judo Sloth Gaming)</a></li>
+                <p>I also enjoyed playing Clash of Clans which a mobile game. I usually play it every night before going to bed.</p>
+                <li><a href="gallery.html">Fishing</a></li>
+                <p>I also enjoyed fishing because it was fun. It is always about the patient waiting for fish to bite into the bait. Also, it is about spending time with my homies and brother. We also hang out throughout the time and fool around.</p>
+            </ul>
+        </div>
+        <div class="interest-box">
+            <h2> My Favorite YouTube Channel</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/@_nickfry" target="_blank">Nick Fry</a></li>
+             <!-- Embedded YouTube video -->
+                <div class="video-container">
+                    <iframe width="850" height="400" src="https://www.youtube.com/embed/IjCLzZYPUSM" frameborder="0" allowfullscreen></iframe>
+                </div>
+             <p>I honestly enjoyed watching his channel. I've been subscribed to his channel for 9 years now. I enjoy watching him go hunting, fishing and exploring places. I started an interest in fishing when I watched his video back in 2016. It gave me the idea to try some new things in life.</p>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Izzat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
